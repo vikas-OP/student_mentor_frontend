@@ -15,7 +15,7 @@
   <body>
     <!-- creating mentors -->
 
-    <div class="container-fluid bg-danger">
+    <div class="container-fluid bg-danger p-5">
       <h1 class="display-4 container">Create Mentor</h1>
       <div class="container">
         <form id="mentorForm">
@@ -35,7 +35,7 @@
 
     <!-- creating students -->
 
-    <div class="container-fluid bg-warning">
+    <div class="container-fluid bg-warning p-5">
       <h1 class="display-4 container">Create Student</h1>
       <div class="container">
         <form id="studentForm">
@@ -54,7 +54,7 @@
     <!-- end of creating students -->
 
     <!-- assigning students to mentor -->
-    <div class="container-fluid bg-primary">
+    <div class="container-fluid bg-info p-5">
       <h1 class="display-4 container">Assigning students to mentor</h1>
       <div class="container">
         <form id="studentsToMentor">
@@ -77,21 +77,22 @@
 
     <!-- assigning mentor to student -->
 
-    <div>
-      <h1>Assigning mentor to student</h1>
-      <form id="mentorToStudent">
-        <label for="studentSelect1">Student</label>
-        <select name="student" id="studentSelect1">
-          <option value="choose student"></option>
-        </select>
-        <br />
-        <br />
-        <label for="mentorSelect1">Mentor</label>
-        <select name="mentor" id="mentorSelect1">
-          <option value="choose mentor"></option>
-        </select>
-        <input type="submit" value="Submit" />
-      </form>
+    <div class="container-fluid bg-dark p-5">
+      <h1 class="container display-4">Assigning mentor to student</h1>
+      <div class="container">
+        <form id="mentorToStudent">
+          <label for="studentSelect1" class="m-3">Student</label>
+          <select name="student" id="studentSelect1" class="form-control m-3">
+            <option value="choose student"></option>
+          </select>
+          <br />
+          <label for="mentorSelect1" class="m-3">Mentor</label>
+          <select name="mentor" id="mentorSelect1" class="form-control m-3">
+            <option value="choose mentor"></option>
+          </select>
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </form>
+      </div>
     </div>
 
     <!-- end of assigning mentor to student -->
