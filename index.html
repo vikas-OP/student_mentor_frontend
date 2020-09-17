@@ -122,12 +122,18 @@
     <!-- end of mentors -->
 
     <!-- students of particular mentor -->
-    <div id="finalDiv">
-      <h1>Students of particular mentor</h1>
-      <form id="particularMentorForm">
-        <select name="mentors" id="particularMentor"></select>
-        <input type="submit" value="Submit" />
-      </form>
+    <div id="finalDiv" class="container-fluid bg-danger p-5">
+      <h1 class="container display-4">Students of particular mentor</h1>
+      <div class="container">
+        <form id="particularMentorForm">
+          <select
+            name="mentors"
+            id="particularMentor"
+            class="form-control m-3"
+          ></select>
+          <button type="submit" class="btn btn-dark m-3">Submit</button>
+        </form>
+      </div>
     </div>
     <!-- end of students of particular mentor -->
     <script src="script.js"></script>
