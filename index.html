@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- creating mentors -->
+
+    <div>
+      <h1>Create Mentor</h1>
+      <form id="mentorForm">
+        <input type="text" id="mentorName" placeholder="mentor name" required />
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+
+    <!-- end of creating mentors -->
+
+    <!-- creating students -->
+
+    <div>
+      <h1>Create Student</h1>
+      <form id="studentForm">
+        <input
+          type="text"
+          id="studentName"
+          placeholder="student name"
+          required
+        />
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+
+    <!-- end of creating students -->
+
+    <!-- assigning students to mentor -->
+    <div>
+      <h1>Assigning students to mentor</h1>
+      <form id="studentsToMentor">
+        <select name="mentors" id="mentorSelect">
+          <option value=""></option>
+        </select>
+        <br />
+        <br />
+        <select name="students" id="studentsSelect" multiple></select>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <!-- end of assigning students to mentor -->
+
+    <!-- assigning mentor to student -->
+
+    <div>
+      <h1>Assigning mentor to student</h1>
+      <form id="mentorToStudent">
+        <label for="studentSelect1">Student</label>
+        <select name="student" id="studentSelect1">
+          <option value="choose student"></option>
+        </select>
+        <br />
+        <br />
+        <label for="mentorSelect1">Mentor</label>
+        <select name="mentor" id="mentorSelect1">
+          <option value="choose mentor"></option>
+        </select>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <!-- end of assigning mentor to student -->
+
+    <!-- students -->
+    <div>
+      <h1>All students</h1>
+      <ul id="studentsInfo"></ul>
+    </div>
+
+    <!-- end of students -->
+
+    <!-- mentors -->
+    <div>
+      <h1>All Mentors</h1>
+      <ul id="mentorsInfo"></ul>
+    </div>
+
+    <!-- end of mentors -->
+
+    <!-- students of particular mentor -->
+    <div id="finalDiv">
+      <h1>Students of particular mentor</h1>
+      <form id="particularMentorForm">
+        <select name="mentors" id="particularMentor"></select>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <!-- end of students of particular mentor -->
+    <script src="script.js"></script>
+  </body>
+</html>
