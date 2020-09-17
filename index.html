@@ -54,17 +54,23 @@
     <!-- end of creating students -->
 
     <!-- assigning students to mentor -->
-    <div>
-      <h1>Assigning students to mentor</h1>
-      <form id="studentsToMentor">
-        <select name="mentors" id="mentorSelect">
-          <option value=""></option>
-        </select>
-        <br />
-        <br />
-        <select name="students" id="studentsSelect" multiple></select>
-        <input type="submit" value="Submit" />
-      </form>
+    <div class="container-fluid bg-primary">
+      <h1 class="display-4 container">Assigning students to mentor</h1>
+      <div class="container">
+        <form id="studentsToMentor">
+          <select name="mentors" id="mentorSelect" class="form-control m-3">
+            <option value=""></option>
+          </select>
+          <br />
+          <select
+            name="students"
+            id="studentsSelect"
+            multiple
+            class="form-control m-3"
+          ></select>
+          <button type="submit" class="btn btn-danger m-3">Submit</button>
+        </form>
+      </div>
     </div>
 
     <!-- end of assigning students to mentor -->
