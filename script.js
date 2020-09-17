@@ -8,7 +8,7 @@ async function createMentor() {
     name: document.getElementById("mentorName").value,
   };
   let response = await fetch(
-    "http://studentmentorvikas.herokuapp.com/api/mentors",
+    "https://studentmentorvikas.herokuapp.com/api/mentors",
     {
       method: "POST",
       body: JSON.stringify(data),
@@ -32,7 +32,7 @@ async function createStudent() {
     name: document.getElementById("studentName").value,
   };
   let response = await fetch(
-    "http://studentmentorvikas.herokuapp.com/api/students",
+    "https://studentmentorvikas.herokuapp.com/api/students",
     {
       method: "POST",
       body: JSON.stringify(data),
@@ -66,7 +66,7 @@ async function assignStudentsToMentor() {
   let data = {
     students: students,
   };
-  let url = `http://studentmentorvikas.herokuapp.com/api/mentors/${mentor}`;
+  let url = `https://studentmentorvikas.herokuapp.com/api/mentors/${mentor}`;
   let response = await fetch(url, {
     method: "PUT",
     body: JSON.stringify(data),
@@ -87,7 +87,7 @@ populateAllMentors();
 populateParticularMentor();
 async function populateParticularMentor() {
   let mentorData = await fetch(
-    "http://studentmentorvikas.herokuapp.com/api/mentors"
+    "https://studentmentorvikas.herokuapp.com/api/mentors"
   );
   mentorData = await mentorData.json();
   mentorData = mentorData.data;
@@ -194,7 +194,7 @@ async function assignMentorToStudent() {
 // for populating in third div function definitions
 async function populateMentors() {
   let mentorData = await fetch(
-    "http://studentmentorvikas.herokuapp.com/api/mentors"
+    "https://studentmentorvikas.herokuapp.com/api/mentors"
   );
   mentorData = await mentorData.json();
   mentorData = mentorData.data;
@@ -212,7 +212,7 @@ async function populateMentors() {
 async function populateStudents() {
   let studentSelect = document.getElementById("studentsSelect");
   let studentData = await fetch(
-    "http://studentmentorvikas.herokuapp.com/api/students/nomentors"
+    "https://studentmentorvikas.herokuapp.com/api/students/nomentors"
   );
   studentData = await studentData.json();
   studentData = studentData.data;
